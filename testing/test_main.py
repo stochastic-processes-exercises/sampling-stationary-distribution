@@ -19,7 +19,7 @@ for i in range(len(mw)) :
        myind = i
        break
 
-e, v, bmin, bmax, isi = mlv[:,myind]/sum(mlv[:,myind]), [], []
+e, v, bmin, bmax, isi = mlv[:,myind]/sum(mlv[:,myind]), [], [], [], []
 for i in range(3) :
     v.append( e[i]*(1-e[i]) / nsteps )
     bmin.append(0)
